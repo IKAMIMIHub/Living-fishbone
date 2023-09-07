@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100&display=swap');
+
+* {
+    font-family: 'M PLUS 2', sans-serif;
+}
+
+a { text-decoration: none;
+    color: black;
+    user-select: none;
+}
+
+#button {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 34px;
+    height: 34px;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#button > a {
+    color: #ffffff;
+    display: block;
+    margin: -2px 0 0 -4px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+#close > a {
+    color: #ffffff;
+    display: block;
+    font-family: 'Noto Serif JP', serif;
+}
+
+#popup {
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #0000008c;
+    margin: 20px;
+    padding: 20px;
+    width: calc(100% - 80px);
+    border-radius: 1px;
+    box-shadow: 4px 4px 20px rgba(0,0,0,0.5);
+}
+
+#popup:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+#close {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    background-color: #71e3ff5a;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    text-align: center;
+    vertical-align: center;
+    font-size: 1.7em;
+    font-weight: bold;
+    user-select: none;
+}
+
+.title {
+    margin: 0;
+    color: #ffffffe0;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 40px;
+}
+
+.name {
+    text-align: end;
+    font-size: 30px;
+    color: #ffffff7a;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.description {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.8em;
+    color: #ffffff;
+}
+
+#Button1{
+    color: rgb(255, 255, 255);
+    background-color: rgba(236, 143, 255, 0.451);
+    position: absolute;
+    right: 40px;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    vertical-align: center;
+    font-size: 1.7em;
+    font-weight: bold;
+    user-select: none;
+    font-family: 'Noto Serif JP', serif;
+}

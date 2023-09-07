@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Living fishbones</title>
+        <style>
+            * { 
+                margin: 0;
+                padding: 0;
+            }
+            html { height: 100% }
+            body { 
+                height: 100%;
+               
+                background-color: #000000;
+            }
+            #container {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+            #p5 {
+                box-shadow: 30px 30px 200px rgba(203, 249, 255, 0.5);
+                
+            }
+
+
+        </style>
+        <link rel="stylesheet" href="./caption.css"></link>
+    </head>
+    <body>
+        <div id="container"></div>
+         <div id="nav">
+            <div id="button"><a href="#popup">＋</a></div>
+        </div>
+        <!-- キャプション -->
+        <div id="popup">
+            <h2 class="title">Living fishbones</h2>
+            <p class="description">自己拡大する生ける魚骨モデル。
+                伸びていく先端をタップすると挙動が変化し、タップしたままスライドすると指の動きに追従したアニメーションを展開する。キャプション右上の▷を押すと描画の様子が再観察できる。</p>
+                <p class="name">IKAMIMI</p>
+                <input id="Button1" type="button" value="▷" onclick="Button_Click();"/>
+            <!-- キャプションの閉ボタン -->
+            <div id="close"><a href="#">&times;</a></div>
+        </div>
+    </body>
+    <script src="https://unpkg.com/p5@1.6.0/lib/p5.min.js"></script>
+    <script src="libs/rhill-voronoi-core.min.js"></script>
+    <script src="scripts/agent.js"></script>
+    <script src="scripts/subdiv.js"></script>
+    <script src="scripts/sketch.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100&display=swap" rel="stylesheet">
+</html>
